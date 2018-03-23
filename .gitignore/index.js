@@ -22,9 +22,11 @@ bot.on('message', message => {
       bot.channels.get  ("424561776902930452").send("Commande de : "+ message.author.createdAt);
       bot.channels.get  ("424561776902930452").send("Commande de : "+ message.author.username);
           }
-    if (message.content === "-msgp") {
+     if (message.content === "-msgp") {
             message.author.createDM().then(channel =>{
-              channel.send("test message private")
+              channel.send("salut ")
+           
+           
             })
                
 
